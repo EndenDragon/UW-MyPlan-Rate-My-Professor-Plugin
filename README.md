@@ -4,4 +4,4 @@ Insert RateMyProfessor's ratings into UW's MyPlan for an added convenience while
 
 * These rating should not be used to determine course selection. This plugin is not affiliated with the University of Washington or RateMyProfessor.
 
-This project was mostly built by Chris (@Ckrisirkc)
+This project was mostly built [Chris] (https://github.com/Ckrisirkc) with small contributions by me.
