@@ -25,7 +25,7 @@ var strMID = '</td><td>';
 var strEND = '</td></tr>';
 /*WORKS */
 document.addEventListener('ajaxReloadEvent', function() {
-	$("div[id^=\"u225_\"]").each( function(){
+	$("div[id^=\"u234_\"]").each( function(){
 		if ($(this).text().indexOf("--") > -1) return; // Check to see if the name is '---', meaning no professor
 		if ($(this).attr('rmp') == 'done') return; // Check to see if we've already inserted the RMP for the professor
 		getInfo(this, function(info, tag) { // Call getInfo, and pass the tag we're getting the info for along with a function to insert the information
