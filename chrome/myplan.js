@@ -49,14 +49,11 @@ document.addEventListener('ajaxReloadEvent', function() {
 				+ strSTART + 'Easiness:' + strMID + info['easyRating'] + strEND
 				+ '</table>'
 				+ '<a href="' + info['url'] + '" target="_blank">Link To Results</a>'
-				+ '<div class="RMPDISCLAIMER" style="float:right;cursor:default;border:1px solid black;display:inline-block;padding:1px;margin:0px;border-radius:2px;font-size:12px">?</div><span style="font-style:italic;font-size:12px; display:none"><br/>Disclaimer:<br/>These rating do not necessarily reflect<br/> an accurate sample of the class<br /> and should not used as a measure<br />of decision between classes.<br /> This rating are not affiliated with<br />the University of Washington.</span>'
+				+ '<div class="RMPDISCLAIMER" onClick="jQuery(this).next().toggle();" style="float:right;cursor:default;border:1px solid black;display:inline-block;padding:1px;margin:0px;border-radius:2px;font-size:12px">?</div><span style="font-style:italic;font-size:12px; display:none"><br/>Disclaimer:<br/>These rating do not necessarily reflect<br/> an accurate sample of the class<br /> and should not used as a measure<br />of decision between classes.<br /> This rating are not affiliated with<br />the University of Washington.</span>'
 				+ '</div>');
 			//console.log("Inserted professor!");
 			$(tag).attr('rmp','done'); // Tag the element as done so we don't do it again
 		});
-	});
-	$(".RMPDISCLAIMER").click( function() {
-		$(this).next().toggle();
 	});
 });
 
