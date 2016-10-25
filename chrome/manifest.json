@@ -7,7 +7,7 @@
 		"128": "icon.png"
 	},
 	"content_scripts": [{
-		"matches": ["https://uwstudent.washington.edu/*"],
+		"matches": ["https://uwstudent.washington.edu/*", "https://myplan.uw.edu/*"],
 		"js": ["jquery-2.1.3.min.js",
 		"myplan.js"]
 	}],
